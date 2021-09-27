@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AppToDoList</string>
+    <string name="tasks">Tasks for today</string>
+    <string name="calendar">Calendar</string>
+    <string name="recurring_tasks">Recurring tasks</string>
+    <string name="my_goals">My goals</string>
+    <string name="zero">0</string>
+    <string name="date">09/24/21</string>
+    <string name="number">0</string>
+    <string name="uncompleted">Uncompleted</string>
+    <string name="completed">Completed</string>
+    <string name="plus">+</string>
+    <string name="close">Close</string>
+    <string name="proceed">Proceed</string>
+    <string name="add_group">Add group</string>
+    <string name="add_task">Add task</string>
+    <string name="percent">0%</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="September_first">01/09/21</string>
+    <string name="September_second">02/09/21</string>
+    <string name="September_third">03/09/21</string>
+    <string name="September_fourth">04/09/21</string>
+    <string name="September_fifth">05/09/21</string>
+    <string name="September_six">06/09/21</string>
+    <string name="September_seven">07/09/21</string>
+    <string name="September_eighth">08/09/21</string>
+    <string name="September_nineth">09/09/21</string>
+
+</resources>

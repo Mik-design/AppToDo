@@ -5,12 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kg.tutorial.apptodolist.databinding.RecurringtasksoneBinding
 import kg.tutorial.apptodolist.databinding.TasksfortodayoneBinding
 
 class FragmentTasksfortoday: Fragment() {
 
     private var _binding: TasksfortodayoneBinding? = null
     private val binding: TasksfortodayoneBinding get() = _binding!!
+//    private var _binding: RecurringtasksoneBinding? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,6 +30,7 @@ class FragmentTasksfortoday: Fragment() {
             SimpleDialog.newInstance("Create task", "subtitle", "1st October").show(childFragmentManager, SimpleDialog.TAG)
             //CalendarSimpleDialog.newInstance("Check the date", "Check month", "any date")
         }
+
     }
 
 

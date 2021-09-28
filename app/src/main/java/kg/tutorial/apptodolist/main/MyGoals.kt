@@ -23,6 +23,10 @@ class MyGoals: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.tasksfortodaytwo.btnAdd.setOnClickListener {
+            SimpleDialog.newInstance("Achive my goal", "Plan it every day", "By end of November").show(childFragmentManager, SimpleDialog.TAG)
+
+        }
     }
 
     companion object {

@@ -29,7 +29,7 @@ class MainFragment : Fragment() {
         binding.recViewTask.adapter = weekdayAdapter
         weekdayAdapter.submitWeekday(FakeMassive.fakeTodoList)
         commentOnClicked()
-        calendarOnClicked()
+//        calendarOnClicked()
         mygoalsOnClicked()
         recurringOnClicked()
     }
@@ -54,7 +54,7 @@ class MainFragment : Fragment() {
         }
     }
 
-    private fun calendarOnClicked() {
+    /*private fun calendarOnClicked() {
         binding.todoList.calendar.setOnClickListener {
             requireActivity().supportFragmentManager
                 .beginTransaction()
@@ -62,7 +62,7 @@ class MainFragment : Fragment() {
                 .addToBackStack(null)
                 .commit()
         }
-    }
+    }*/
 
     private fun commentOnClicked() {
         binding.todoList.task.setOnClickListener {

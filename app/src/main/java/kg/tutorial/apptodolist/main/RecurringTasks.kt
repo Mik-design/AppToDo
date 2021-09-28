@@ -23,6 +23,9 @@ class RecurringTasks : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.tasksfortodaytwo.btnAdd.setOnClickListener {
+            SimpleDialog.newInstance("Follow up", "Recheck", "Every week").show(childFragmentManager, SimpleDialog.TAG)
+        }
     }
 
     companion object {

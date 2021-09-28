@@ -21,9 +21,13 @@ class FragmentTasksfortoday: Fragment() {
         return binding.root
     }
 
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-    }*/
+        binding.tasksfortodaytwo.btnAdd.setOnClickListener {
+            SimpleDialog.newInstance("Create task", "subtitle", "1st October").show(childFragmentManager, SimpleDialog.TAG)
+            //CalendarSimpleDialog.newInstance("Check the date", "Check month", "any date")
+        }
+    }
 
 
 

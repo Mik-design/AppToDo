@@ -32,19 +32,19 @@
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/recurring_tasks"
                 android:layout_marginStart="16dp"
+                android:text="@string/recurring_tasks"
                 app:layout_constraintBottom_toTopOf="@+id/report"
                 app:layout_constraintStart_toEndOf="@+id/rec_but"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:contentDescription="@string/material_motion_easing_standard"
                 android:id="@+id/report"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                android:contentDescription="@string/material_motion_easing_standard"
                 android:src="@drawable/ic_completed_task"
                 app:layout_constraintStart_toEndOf="@+id/rec_but"
                 app:layout_constraintTop_toBottomOf="@+id/date" />
@@ -53,20 +53,20 @@
                 android:id="@+id/zero_ofZero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/number"
-                android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/number"
                 app:layout_constraintEnd_toStartOf="@+id/cal"
                 app:layout_constraintStart_toEndOf="@+id/report"
                 app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <ImageView
-                android:contentDescription="@string/material_motion_easing_standard"
                 android:id="@+id/cal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:contentDescription="@string/material_motion_easing_standard"
                 android:src="@drawable/ic_rec"
                 app:layout_constraintStart_toEndOf="@+id/zero_ofZero"
                 app:layout_constraintTop_toBottomOf="@+id/date" />
@@ -75,8 +75,8 @@
                 android:id="@+id/zero_one_ofZero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/number"
                 app:layout_constraintStart_toEndOf="@+id/cal"
                 app:layout_constraintTop_toBottomOf="@+id/date" />
@@ -84,6 +84,18 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/tasksfortodaytwo"
+        layout="@layout/tasksfortodaytwo"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_one_view" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

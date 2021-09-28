@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
@@ -16,96 +15,106 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Monday"
             android:textAlignment="center"
-            android:text="@string/Monday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_first"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
 
     </LinearLayout>
-    <LinearLayout
+
+    <!--<LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/week_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Tuesday"
             android:textAlignment="center"
-            android:text="@string/Tuesday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_second"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/week_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Wednesday"
             android:textAlignment="center"
-            android:text="@string/Wednesday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_third"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -113,69 +122,76 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/week_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Thursday"
             android:textAlignment="center"
-            android:text="@string/Thursday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_fourth"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/week_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Friday"
             android:textAlignment="center"
-            android:text="@string/Friday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_fifth"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -186,69 +202,72 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Saturday"
             android:textAlignment="center"
-            android:text="@string/Saturday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_six"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/week_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/Sunday"
             android:textAlignment="center"
-            android:text="@string/Sunday"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/date_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:textAlignment="center"
             android:text="@string/September_seven"
-            android:textSize="12sp"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/per_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            android:text="@string/percent"
             android:textAlignment="center"
-            android:text="@string/percent"/>
+            android:textColor="@color/black"
+            android:textStyle="italic" />
 
     </LinearLayout>
-
-
-
-
+-->
 
 </androidx.appcompat.widget.LinearLayoutCompat>

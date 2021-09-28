@@ -19,7 +19,5 @@ object FakeMassive {
         Todo (13, false, 0f, "13th September", "To drive to town"),
         Todo (14, false, 0f, "14th September", "To live a happy life"),
         Todo (15, false, 0f, "15th September", "To find a beatiful house"),
-
-
     )
 }

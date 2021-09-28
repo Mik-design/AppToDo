@@ -61,16 +61,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:contentDescription="@string/plus"
-        android:src="@drawable/ic_plus"
         android:id="@+id/btn_add"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="16dp"
+        android:background="@drawable/todo_circle"
+        android:contentDescription="@string/plus"
         android:padding="16dp"
+        android:src="@drawable/ic_plus"
         android:textColor="#F8F4F4"
         android:textSize="24sp"
-        android:background="@drawable/todo_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

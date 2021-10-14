@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rec_but"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -86,8 +86,8 @@
     </androidx.cardview.widget.CardView>
 
     <include
-        android:id="@+id/tasksfortodaytwo"
-        layout="@layout/tasksfortodaytwo"
+        android:id="@+id/recurringtaskstwo"
+        layout="@layout/recurringtaskstwo"
         android:layout_width="0dp"
         android:layout_marginTop="16dp"
         android:layout_height="0dp"

@@ -1,16 +1,14 @@
-package kg.tutorial.apptodolist.mainfragment
+package kg.tutorial.apptodolist.data
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.time.MonthDay
 
-@Entity(tableName = "todo")
-class Todo(
-    @PrimaryKey (autoGenerate = true)
-    val id: Int,
-    val isCompleted: Boolean,
-    val percent: Float,
+
+@Entity(tableName = "weekDates")
+class WeekdayData(
+    @PrimaryKey(autoGenerate = true)
     val date: String,
-    val task: String
+    val weekday: String,
+    val percent: Float,
+
 )

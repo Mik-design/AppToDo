@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/arrow_up.xml" value="0.25" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/check.xml" value="1.1142857142857143" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/circle_forweekdays.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/custom.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_calendar.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_close.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_close1.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_completed_task.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_goal.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26615384615384613" />
@@ -20,13 +24,21 @@
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/add_group.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/calendar_two.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/circle_weekday.xml" value="0.4" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/editing_text.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/fragment_one.xml" value="0.264" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/fragment_week.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/important_recurringtasks.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/importantgoals.xml" value="0.2" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/list_fragment.xml" value="0.1" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/mygoalsone.xml" value="0.264" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/mygoalstwo.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/recurringtasksone.xml" value="0.176" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/recurringtaskstwo.xml" value="0.264" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/recutting_taskstwo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/row_itemlayout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/row_itemlayout_mygoals.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/row_itemlayout_reccuringtasks.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/row_itemlayout_tasksfortoday.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/second_page_1_mygoals.xml" value="0.2" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/second_page_1_recurring_tasks.xml" value="0.1265625" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/second_page_1_tasks_for_today.xml" value="0.25416666666666665" />
@@ -36,10 +48,15 @@
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/second_page_calendar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/second_page_tasks_for_today.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/tasksfor_todaytwo.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/tasksfortodayone.xml" value="0.264" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/tasksfortodayone.xml" value="0.13055555555555556" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/tasksfortodaytwo.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/todo_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/layout/weekdays.xml" value="0.24096385542168675" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/menu/view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2657407407407407" />
+        <entry key="..\:/Users/Aida/AndroidStudioProjects/AppToDoList/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2657407407407407" />
+        <entry key="..\:/Users/Aida/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_dropdown_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aida/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_item.xml" value="0.1712962962962963" />
       </map>
     </option>
   </component>

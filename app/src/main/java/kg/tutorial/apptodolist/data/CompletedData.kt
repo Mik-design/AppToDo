@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "completed")
-class Completed(
+class CompletedData(
     @PrimaryKey(autoGenerate = true)
     val isCompleted: Boolean,
     val percent: Float,

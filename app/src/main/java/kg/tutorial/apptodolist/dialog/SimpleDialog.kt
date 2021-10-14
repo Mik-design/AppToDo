@@ -1,12 +1,17 @@
-package kg.tutorial.apptodolist.main
+package kg.tutorial.apptodolist.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.setFragmentResult
 import kg.tutorial.apptodolist.databinding.AddGroupBinding
+import kg.tutorial.apptodolist.dialog.SimpleDialog.Companion.newInstance
+import kg.tutorial.apptodolist.fragments.ImportantRecurringTasks
+import kg.tutorial.apptodolist.fragments.MyGoals.Companion.newInstance
 
 
 class SimpleDialog : DialogFragment() {
@@ -16,7 +21,6 @@ class SimpleDialog : DialogFragment() {
 
 
     companion object {
-
         const val TAG = "SimpleDialog"
 
         private const val KEY_TITLE = "KEY_TITLE"
@@ -30,7 +34,6 @@ class SimpleDialog : DialogFragment() {
             fragment.arguments = args
             return fragment
         }
-
     }
 
     override fun onCreateView(
@@ -39,12 +42,21 @@ class SimpleDialog : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = AddGroupBinding.inflate(inflater)
-        return binding.root
+        binding.addTask.setOnClickListener {
+            ImportantRecurringTasks.newInstance()
+//            SimpleDialog.newInstance("Achive my goal", "Plan it every day", "By end of November").show(childFragmentManager, SimpleDialog.TAG)
+/*
+            val editTextString = ".,m,m,m,m,m,m.." // Get string from EditText
+                // Use the Kotlin extension in the fragment-ktx artifact
+                setFragmentResult("keyClicked", bundleOf("bundleKey" to editTextString))
+           */ }
 
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+
+//            dismiss()
+
+//        show(childFragmentManager, SimpleDialog.TAG)
+        return  binding.root
     }
 
     override fun onStart() {
@@ -54,6 +66,4 @@ class SimpleDialog : DialogFragment() {
             WindowManager.LayoutParams.WRAP_CONTENT
         )
     }
-
-
 }

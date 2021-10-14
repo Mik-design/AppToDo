@@ -4,12 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import kg.tutorial.apptodolist.mainfragment.Todo
 import kg.tutorial.apptodolist.dao.WeekdayDao
+import kg.tutorial.apptodolist.mainfragment.TodoData
 
 
 // Annotates class to be a Room Database with a table (entity) of the Todo class
-@Database(entities = [Todo::class], version = 1, exportSchema = false)
+@Database(entities = [TodoData::class], version = 1, exportSchema = false)
 abstract class WeekdayRoomDatabase : RoomDatabase() {
 
     abstract fun weekdayDao(): WeekdayDao

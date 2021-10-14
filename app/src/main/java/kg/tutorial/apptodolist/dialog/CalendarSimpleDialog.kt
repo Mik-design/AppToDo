@@ -1,4 +1,4 @@
-package kg.tutorial.apptodolist.main
+package kg.tutorial.apptodolist.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -38,13 +38,9 @@ class CalendarSimpleDialog: DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = CalendarTwoBinding.inflate(inflater)
+        _binding = CalendarTwoBinding.inflate(inflater, container, false)
         return binding.root
 
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onStart() {
@@ -52,6 +48,7 @@ class CalendarSimpleDialog: DialogFragment() {
         dialog?.window?.setLayout(
             WindowManager.LayoutParams.MATCH_PARENT,
             WindowManager.LayoutParams.WRAP_CONTENT
+
         )
     }
 

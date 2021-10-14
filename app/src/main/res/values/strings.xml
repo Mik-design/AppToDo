@@ -31,5 +31,31 @@
     <string name="September_seven">07/09/21</string>
     <string name="September_eighth">08/09/21</string>
     <string name="September_nineth">09/09/21</string>
+    <string name="Enter">Enter</string>
+    <string name="action_favorite">action_favorite</string>
+    <string name="action_settings">action_settings</string>
+
+        <string-array name="priority_names">
+            <item>None</item>
+            <item>Low</item>
+            <item>Medium</item>
+            <item>High</item>
+        </string-array>
+
+    <string name="task_name">Task name</string>
+    <string name="task_desc">Task description</string>
+    <string name="date_start">Date of start</string>
+    <string name="date_finish">Date of finish</string>
+    <string name="priority">Priority</string>
+    <string name="repeat">Repeat until progress reches 100%</string>
+
+    <string name="goal_name">Goal name</string>
+    <string name="goal_description">Goal description</string>
+    <string name="calculate_progress">Calculate progress on subtasks progress</string>
+
+
+
+
+
 
 </resources>

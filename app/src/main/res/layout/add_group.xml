@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_task"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="12dp"
         ndroid:layout_constraintTop_toTopOf="parent"
         android:autofillHints="text"
         android:background="@null"
         ndroid:layout_constraintEnd_toEndOf="parent"
-        android:hint="@string/add_task"
+        android:text="Add task"
+        android:textAlignment="textStart"
         android:inputType="text"
         android:padding="12dp"
         android:textSize="18sp"
         ndroid:layout_constraintStart_toStartOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

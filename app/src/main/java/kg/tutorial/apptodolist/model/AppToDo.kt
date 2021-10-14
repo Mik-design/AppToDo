@@ -1,4 +1,4 @@
-package kg.tutorial.apptodolist
+package kg.tutorial.apptodolist.model
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

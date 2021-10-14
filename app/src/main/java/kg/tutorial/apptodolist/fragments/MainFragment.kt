@@ -1,4 +1,4 @@
-package kg.tutorial.apptodolist.main
+package kg.tutorial.apptodolist.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import kg.tutorial.apptodolist.R
 import kg.tutorial.apptodolist.adapter.WeekdayAdapter
 import kg.tutorial.apptodolist.databinding.WeekdaysBinding
+import kg.tutorial.apptodolist.dialog.CalendarSimpleDialog
+import kg.tutorial.apptodolist.fragments.MainFragment.Companion.newInstance
+import kg.tutorial.apptodolist.main.FakeMassiveWeekdays
 
 class MainFragment : Fragment() {
 
@@ -26,10 +29,11 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.recViewTask.adapter = weekdayAdapter
-        weekdayAdapter.submitWeekday(FakeMassive.fakeTodoList)
+        weekdayAdapter.submitWeekday(FakeMassiveWeekdays.fakeWeekdays)
         commentOnClicked()
-//        calendarOnClicked()
+        calendarOnClicked()
         mygoalsOnClicked()
         recurringOnClicked()
     }
@@ -54,15 +58,12 @@ class MainFragment : Fragment() {
         }
     }
 
-    /*private fun calendarOnClicked() {
+    private fun calendarOnClicked() {
         binding.todoList.calendar.setOnClickListener {
-            requireActivity().supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragment_view, CalendarTwo.newInstance())
-                .addToBackStack(null)
-                .commit()
+           CalendarSimpleDialog.newInstance("New", "great", "today").show(childFragmentManager, CalendarSimpleDialog.TAG)
+
         }
-    }*/
+    }
 
     private fun commentOnClicked() {
         binding.todoList.task.setOnClickListener {

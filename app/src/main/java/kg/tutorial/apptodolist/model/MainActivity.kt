@@ -1,8 +1,9 @@
-package kg.tutorial.apptodolist
+package kg.tutorial.apptodolist.model
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kg.tutorial.apptodolist.main.MainFragment
+import kg.tutorial.apptodolist.R
+import kg.tutorial.apptodolist.fragments.MainFragment
 
 
 class MainActivity : AppCompatActivity() {

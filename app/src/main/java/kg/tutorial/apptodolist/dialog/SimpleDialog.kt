@@ -5,13 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.setFragmentResult
 import kg.tutorial.apptodolist.databinding.AddGroupBinding
-import kg.tutorial.apptodolist.dialog.SimpleDialog.Companion.newInstance
-import kg.tutorial.apptodolist.fragments.ImportantRecurringTasks
-import kg.tutorial.apptodolist.fragments.MyGoals.Companion.newInstance
+import kg.tutorial.apptodolist.ui.ImportantRecurringTasks
 
 
 class SimpleDialog : DialogFragment() {

@@ -1,7 +1,7 @@
 package kg.tutorial.apptodolist.dialog
 
 import android.os.Bundle
-import android.os.Parcelable
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +9,7 @@ import android.view.WindowManager
 import androidx.fragment.app.DialogFragment
 import kg.tutorial.apptodolist.R
 import kg.tutorial.apptodolist.databinding.CalendarTwoBinding
-import kg.tutorial.apptodolist.fragments.ProceedCalendar
-import kotlinx.parcelize.Parcelize
+import kg.tutorial.apptodolist.ui.ProceedCalendar
 import java.text.SimpleDateFormat
 
 class CalendarSimpleDialog: DialogFragment() {
@@ -18,7 +17,7 @@ class CalendarSimpleDialog: DialogFragment() {
     private var _binding: CalendarTwoBinding? = null
     private val binding: CalendarTwoBinding get() = _binding!!
 
-    private var date: Date? = null
+    private var date: ProceedCalendar.Date? = null
 
     companion object {
 
@@ -57,14 +56,14 @@ class CalendarSimpleDialog: DialogFragment() {
             dismiss()
         }
         binding.calView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-            date = Date(year, month, dayOfMonth)
+            date = ProceedCalendar.Date(year, month, dayOfMonth)
         }
         binding.proceed.setOnClickListener {
             val nonFormattedDate: List<String> = convertLongToTime(binding.calView.date).split(".")
             val year = nonFormattedDate[0].toInt()
             val month = nonFormattedDate[1].toInt()
             val day = nonFormattedDate[2].toInt()
-            val currentDate = Date(year, month, day)
+            val currentDate = ProceedCalendar.Date(year, month, day)
             if (date != null) {
                 println("SEND DATE: $currentDate")
                 requireActivity().supportFragmentManager
@@ -95,17 +94,10 @@ class CalendarSimpleDialog: DialogFragment() {
         dialog?.window?.setLayout(
             WindowManager.LayoutParams.MATCH_PARENT,
             WindowManager.LayoutParams.WRAP_CONTENT
-
         )
     }
 }
 
-@Parcelize
-data class Date(
-    val year: Int,
-    val month: Int,
-    val day: Int
-): Parcelable
 
 private fun convertLongToTime(time: Long): String {
     val date = java.util.Date(time)

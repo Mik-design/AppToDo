@@ -3,7 +3,7 @@ package kg.tutorial.apptodolist.model
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kg.tutorial.apptodolist.R
-import kg.tutorial.apptodolist.fragments.MainFragment
+import kg.tutorial.apptodolist.ui.MainFragment
 
 
 class MainActivity : AppCompatActivity() {

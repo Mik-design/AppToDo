@@ -1,4 +1,4 @@
-package kg.tutorial.apptodolist.fragments
+package kg.tutorial.apptodolist.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

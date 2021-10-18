@@ -1,4 +1,4 @@
-package kg.tutorial.apptodolist.fragments
+package kg.tutorial.apptodolist.ui
 
 import android.app.Dialog
 import android.os.Bundle

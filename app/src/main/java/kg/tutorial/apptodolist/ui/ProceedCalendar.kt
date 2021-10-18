@@ -1,13 +1,13 @@
-package kg.tutorial.apptodolist.fragments
+package kg.tutorial.apptodolist.ui
 
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kg.tutorial.apptodolist.R
 import kg.tutorial.apptodolist.databinding.ProceedCalendarBinding
-import kg.tutorial.apptodolist.dialog.Date
+import kotlinx.parcelize.Parcelize
 
 class ProceedCalendar : Fragment() {
 
@@ -48,6 +48,12 @@ class ProceedCalendar : Fragment() {
      }
     */
 
+    @Parcelize
+    data class Date(
+        val year: Int,
+        val month: Int,
+        val day: Int
+    ): Parcelable
 
     companion object {
         fun newInstance(date: Date) = ProceedCalendar().apply {
@@ -55,7 +61,6 @@ class ProceedCalendar : Fragment() {
                 putParcelable(DATE_KEY, date)
             }
         }
-
         const val DATE_KEY: String = "DATE"
     }
 }

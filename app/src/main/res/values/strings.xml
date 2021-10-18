@@ -34,6 +34,7 @@
     <string name="Enter">Enter</string>
     <string name="action_favorite">action_favorite</string>
     <string name="action_settings">action_settings</string>
+    <string name="date_october">14/10/21</string>
 
         <string-array name="priority_names">
             <item>None</item>

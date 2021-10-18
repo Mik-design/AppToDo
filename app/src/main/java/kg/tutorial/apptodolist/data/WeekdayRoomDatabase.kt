@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import kg.tutorial.apptodolist.dao.WeekdayDao
 import kg.tutorial.apptodolist.mainfragment.TodoData
+import kotlinx.coroutines.InternalCoroutinesApi
 
 
 // Annotates class to be a Room Database with a table (entity) of the Todo class
@@ -20,6 +21,7 @@ abstract class WeekdayRoomDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: WeekdayRoomDatabase? = null
 
+        @InternalCoroutinesApi
         fun getDatabase(context: Context): WeekdayRoomDatabase {
             // if the INSTANCE is not null, then return it,
             // if it is, then create the database

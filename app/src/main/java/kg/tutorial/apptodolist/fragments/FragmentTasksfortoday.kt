@@ -46,7 +46,7 @@ class FragmentTasksfortoday : Fragment(), UpdateAndDelete {
         val btnAdd = view.findViewById<FloatingActionButton>(R.id.btn_add)
         listViewItem = binding.tasksfortodaytwo.itemListView
 
-        btnAdd.setOnClickListener { view ->
+        btnAdd.setOnClickListener {
             val alertDialog = AlertDialog.Builder(requireContext())
             val textEditText = EditText(requireContext())
             alertDialog.setMessage("Add ToDo item")

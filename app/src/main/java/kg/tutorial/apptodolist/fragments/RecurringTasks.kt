@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.google.firebase.database.*
 import kg.tutorial.apptodolist.R
 import kg.tutorial.apptodolist.databinding.RecurringtasksoneBinding
 
@@ -32,20 +31,20 @@ class RecurringTasks : Fragment() {
 
     private fun clicked() {
         binding.recurringtaskstwo.btnPlus.setOnClickListener {
-                val dialog = Dialog(requireContext())
-                dialog.setContentView(R.layout.add_group)
-                val button = dialog.findViewById<Button>(R.id.add_task)
-                button.setOnClickListener {
-                    dialog.dismiss()
-                    requireActivity().supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_view, ImportantRecurringTasks.newInstance())
-                        .addToBackStack(null)
-                        .commit()
-                }
-                dialog.show()
+            val dialog = Dialog(requireContext())
+            dialog.setContentView(R.layout.add_group)
+            val button = dialog.findViewById<Button>(R.id.add_task)
+            button.setOnClickListener {
+                dialog.dismiss()
+                requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragment_view, ImportantRecurringTasks.newInstance())
+                    .addToBackStack(null)
+                    .commit()
             }
+            dialog.show()
         }
+    }
 
 
     companion object {

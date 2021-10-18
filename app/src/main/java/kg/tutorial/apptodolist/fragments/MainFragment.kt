@@ -9,8 +9,8 @@ import kg.tutorial.apptodolist.R
 import kg.tutorial.apptodolist.adapter.WeekdayAdapter
 import kg.tutorial.apptodolist.databinding.WeekdaysBinding
 import kg.tutorial.apptodolist.dialog.CalendarSimpleDialog
-import kg.tutorial.apptodolist.fragments.MainFragment.Companion.newInstance
 import kg.tutorial.apptodolist.main.FakeMassiveWeekdays
+
 
 class MainFragment : Fragment() {
 
@@ -60,7 +60,8 @@ class MainFragment : Fragment() {
 
     private fun calendarOnClicked() {
         binding.todoList.calendar.setOnClickListener {
-           CalendarSimpleDialog.newInstance("New", "great", "today").show(childFragmentManager, CalendarSimpleDialog.TAG)
+            CalendarSimpleDialog.newInstance("New", "great", "today")
+                .show(childFragmentManager, CalendarSimpleDialog.TAG)
 
         }
     }

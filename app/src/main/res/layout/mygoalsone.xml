@@ -50,7 +50,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <TextView
-                android:id="@+id/zero_ofZero"
+                android:id="@+id/zero_of_zero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
@@ -68,7 +68,7 @@
                 android:layout_marginTop="8dp"
                 android:contentDescription="@string/material_motion_easing_standard"
                 android:src="@drawable/ic_goal"
-                app:layout_constraintStart_toEndOf="@+id/zero_ofZero"
+                app:layout_constraintStart_toEndOf="@+id/zero_of_zero"
                 app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <TextView

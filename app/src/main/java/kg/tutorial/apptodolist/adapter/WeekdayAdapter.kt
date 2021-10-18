@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kg.tutorial.apptodolist.data.WeekdayData
 import kg.tutorial.apptodolist.databinding.CircleWeekdayBinding
+import java.util.Collections.emptyList
 
 class WeekdayAdapter : RecyclerView.Adapter<WeekdayAdapter.WeekdayVH>() {
 

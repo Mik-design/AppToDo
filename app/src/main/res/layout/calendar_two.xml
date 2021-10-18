@@ -22,8 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cal_view" />
 
-    <TextView
-        android:id="@+id/close"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/iv_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/close"
@@ -31,13 +31,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cal_view" />
 
-    <TextView
+    <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/proceed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintStart_toEndOf="@+id/iv_close"
         app:layout_constraintTop_toBottomOf="@+id/cal_view" />
 
 

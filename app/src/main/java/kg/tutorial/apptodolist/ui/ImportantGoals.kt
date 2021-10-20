@@ -129,20 +129,12 @@ class ImportantGoals : Fragment(), AdapterView.OnItemSelectedListener{
 
         override fun onResults(bundle: Bundle) {
             val result = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
-//                val result_one = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
             if (result != null) {
                 // attaching the output
                 // to our textview
                 binding.goalName.setText(result[0].toString())
-/*
-
-                    if (result_one !=null) {
-                        binding.goalDesc.setText(result_one[0].toString())
-*/
-
             }
         }
-
 
         override fun onPartialResults(bundle: Bundle) {}
         override fun onEvent(i: Int, bundle: Bundle?) {}
@@ -174,11 +166,6 @@ class ImportantGoals : Fragment(), AdapterView.OnItemSelectedListener{
                 // attaching the output
                 // to our textview
                 binding.goalDesc.setText(result[0].toString())
-/*
-
-                    if (result_one !=null) {
-                        binding.goalDesc.setText(result_one[0].toString())
-*/
 
             }
         }

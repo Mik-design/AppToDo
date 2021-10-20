@@ -133,9 +133,5 @@ class FragmentTasksfortoday : Fragment(), UpdateAndDelete {
 // applicationContext -> requireContext()
 
 
-/*binding.tasksfortodaytwo.btnAdd.setOnClickListener {
-    SimpleDialog.newInstance("Create task", "subtitle", "1st October")
-        .show(childFragmentManager, SimpleDialog.TAG)
-*/
 
 

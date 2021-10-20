@@ -28,12 +28,7 @@ class MyGoals : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         clicked()
     }
-/*
-        binding.tasksfortodaytwo.btnAdd.setOnClickListener {
-            SimpleDialog.newInstance("Achive my goal", "Plan it every day", "By end of November").show(childFragmentManager, SimpleDialog.TAG)
 
-        }
-*/
 
     private fun clicked() {
         binding.tasksfortodaytwo.btnAdd.setOnClickListener {

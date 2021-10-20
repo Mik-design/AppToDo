@@ -80,13 +80,6 @@ class CalendarSimpleDialog: DialogFragment() {
                     .commit()
             }
         }
-        /*binding.close.setOnClickListener {
-            requireActivity().supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.close, ProceedCalendar.newInstance())
-                .addToBackStack(null)
-                .commit()
-        }*/
     }
 
     override fun onStart() {

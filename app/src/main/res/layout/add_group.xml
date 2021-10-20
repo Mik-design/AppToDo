@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ndroid="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select action:"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_task"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        ndroid:layout_constraintTop_toTopOf="parent"
         android:autofillHints="text"
-        android:background="@null"
-        ndroid:layout_constraintEnd_toEndOf="parent"
-        android:text="Add task"
-        android:textAlignment="textStart"
+        android:background="@drawable/bg_button_colored_ripple"
+        android:clickable="true"
+        android:focusable="true"
         android:inputType="text"
         android:padding="12dp"
-        android:textSize="18sp"
-        ndroid:layout_constraintStart_toStartOf="parent" />
+        android:text="Add task"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

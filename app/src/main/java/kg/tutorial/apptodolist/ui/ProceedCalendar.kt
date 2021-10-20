@@ -13,12 +13,13 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 import kg.tutorial.apptodolist.R
+import kg.tutorial.apptodolist.UpdateAndDelete
 import kg.tutorial.apptodolist.adapter.ToDoAdapter
 import kg.tutorial.apptodolist.databinding.ProceedCalendarBinding
 import kg.tutorial.apptodolist.model.ToDoModel
 import kotlinx.parcelize.Parcelize
 
-class ProceedCalendar : Fragment() {
+class ProceedCalendar : Fragment(), UpdateAndDelete {
 
     lateinit var database: DatabaseReference//
     var toDoList: MutableList<ToDoModel>? = null
@@ -129,14 +130,6 @@ class ProceedCalendar : Fragment() {
         itemReference.removeValue()
         adapter.notifyDataSetChanged()
     }
-
-
-
-
-}
-
-    }
-
 
     @Parcelize
     data class Date(

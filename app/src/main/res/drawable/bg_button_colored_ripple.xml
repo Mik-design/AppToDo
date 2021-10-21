@@ -4,7 +4,7 @@
     <item android:drawable="@drawable/bg_button_colored"/>
     <item android:id="@android:id/mask">
         <shape android:shape="rectangle">
-            <solid android:color="#FFFFFF" />
+            <solid android:color="#21DAF3" />
         </shape>
     </item>
 </ripple>

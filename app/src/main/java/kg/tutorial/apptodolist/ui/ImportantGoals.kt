@@ -37,7 +37,6 @@ class ImportantGoals : Fragment(), AdapterView.OnItemSelectedListener{
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.spinner.setOnItemSelectedListener(this)
 
         val arr = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, states)

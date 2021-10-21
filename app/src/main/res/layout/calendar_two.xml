@@ -27,15 +27,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/close"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/proceed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cal_view" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/proceed"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_close"
         app:layout_constraintTop_toBottomOf="@+id/cal_view" />
